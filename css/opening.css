@@ -1,0 +1,175 @@
+/* ==================================================
+   Opening
+================================================== */
+
+.opening {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  padding: 48px 24px;
+
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.opening-inner {
+  position: relative;
+  z-index: 1;
+
+  width: min(700px, 100%);
+
+  text-align: center;
+}
+
+/* ==================================================
+   Background Glow
+================================================== */
+
+.opening::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+
+  width: min(700px, 90vw);
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(56, 189, 248, 0.09) 0%,
+    rgba(56, 189, 248, 0.04) 38%,
+    transparent 70%
+  );
+
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+}
+
+/* ==================================================
+   Brand
+================================================== */
+
+.brand {
+  margin-bottom: 18px;
+
+  color: var(--accent);
+
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.6em;
+  text-indent: 0.6em;
+}
+
+/* ==================================================
+   Site Title
+================================================== */
+
+.site-title {
+  margin-bottom: 16px;
+
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 6vw, 4rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+}
+
+/* ==================================================
+   Portfolio Label
+================================================== */
+
+.portfolio {
+  margin-bottom: 64px;
+
+  color: var(--text-sub);
+
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.55em;
+  text-indent: 0.55em;
+}
+
+/* ==================================================
+   Logo Area
+================================================== */
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 56px;
+}
+
+/* ==================================================
+   Keyhole
+================================================== */
+
+/* ==================================================
+   Keyhole
+================================================== */
+
+.keyhole {
+  display: block;
+  width: clamp(110px, 12vw, 140px);
+  height: auto;
+
+  cursor: pointer;
+
+  filter: drop-shadow(0 0 10px rgba(226, 232, 240, 0.12))
+    drop-shadow(0 0 24px rgba(56, 189, 248, 0.08));
+
+  transition:
+    filter var(--duration-normal) ease,
+    opacity var(--duration-normal) ease;
+}
+
+.keyhole:hover {
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.65))
+    drop-shadow(0 0 22px rgba(56, 189, 248, 0.38));
+}
+
+.keyhole:hover {
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.4))
+    drop-shadow(0 0 20px rgba(56, 189, 248, 0.22));
+}
+
+/* ==================================================
+   Copy
+================================================== */
+
+.copy {
+  margin-bottom: 18px;
+
+  color: var(--text-main);
+
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.22em;
+}
+
+/* ==================================================
+   Unlock
+================================================== */
+
+.unlock {
+  color: var(--text-sub);
+
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  letter-spacing: 0.35em;
+
+  opacity: 0.75;
+}

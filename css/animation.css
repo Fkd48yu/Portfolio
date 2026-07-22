@@ -1,0 +1,65 @@
+/* ==================================================
+   Opening Fade
+================================================== */
+
+.opening-inner {
+  animation: opening-fade 1.2s ease both;
+}
+
+@keyframes opening-fade {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================================================
+   Keyhole Float
+================================================== */
+
+.keyhole-motion {
+  animation: keyhole-float 4s ease-in-out infinite;
+}
+
+@keyframes keyhole-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* ==================================================
+   Keyhole Hover
+================================================== */
+
+.keyhole {
+  transform: scale(1);
+}
+
+.keyhole:hover {
+  transform: scale(1.06);
+}
+
+/* ==================================================
+   Reduced Motion
+================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,41 @@
+/* ==================================================
+   Design Variables
+================================================== */
+
+:root {
+  /* Background */
+  --bg-main: #0f172a;
+  --bg-surface: #1e293b;
+
+  /* Text */
+  --text-main: #e2e8f0;
+  --text-sub: #94a3b8;
+
+  /* Accent */
+  --accent: #38bdf8;
+  --gold: #f59e0b;
+
+  /* Border */
+  --border: rgba(255, 255, 255, 0.08);
+
+  /* Font */
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", "Noto Sans JP", sans-serif;
+
+  /* Layout */
+  --content-width: 1200px;
+  --inner-width: 1100px;
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 40px;
+  --space-xl: 64px;
+  --space-2xl: 96px;
+  --space-section: 160px;
+
+  /* Animation */
+  --duration-fast: 0.3s;
+  --duration-normal: 0.5s;
+}
