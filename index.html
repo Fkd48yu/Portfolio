@@ -7,10 +7,12 @@
 
     <title>FKD Portfolio | Yuta Fukuda</title>
 
-    <meta name="description" content="Yuta Fukuda Portfolio Website" />
+    <meta
+      name="description"
+      content="Yuta Fukudaのポートフォリオサイトです。HTML、CSS、Web制作を学習しています。"
+    />
 
     <!-- Google Fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,18 +23,20 @@
     />
 
     <!-- CSS -->
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/base.css" />
+
     <link rel="stylesheet" href="css/opening.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+
     <link rel="stylesheet" href="css/animation.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
 
-  <!-- Opening -->
   <body>
+    <!-- Opening -->
     <section class="opening">
       <div class="opening-inner">
         <p class="brand">FKD</p>
@@ -40,6 +44,7 @@
         <h1 class="site-title">Yuta Fukuda</h1>
 
         <p class="portfolio">PORTFOLIO</p>
+
         <div class="logo-area">
           <div class="keyhole-motion">
             <img
@@ -55,9 +60,90 @@
         <p class="unlock">Click to Unlock</p>
       </div>
     </section>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <a href="#" class="header-logo">
+          <img src="images/logo/keyhole.svg" alt="" class="header-logo-image" />
+
+          <span class="header-logo-text">FKD</span>
+        </a>
+
+        <nav class="global-nav" aria-label="メインナビゲーション">
+          <ul class="global-nav-list">
+            <li>
+              <a href="#about" class="global-nav-link">ABOUT</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="global-nav-link">SKILLS</a>
+            </li>
+
+            <li>
+              <a href="#works" class="global-nav-link">WORKS</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="global-nav-link">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main-content">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="hero-intro">HELLO,</p>
+
+            <h2 class="hero-title">
+              <span class="hero-title-small">I’m</span>
+
+              <span class="hero-title-name">
+                Yuta <strong>Fukuda.</strong>
+              </span>
+            </h2>
+
+            <p class="hero-role">Front-end Developer</p>
+
+            <div class="hero-description">
+              <p>
+                10年以上のバースタッフ経験で培った 「人に寄り添う力」を武器に、
+              </p>
+
+              <p>Webの世界で新しい価値を生み出したい。</p>
+
+              <p>
+                使いやすく、心地よいWebサイトを、
+                一つひとつ丁寧に制作しています。
+              </p>
+            </div>
+
+            <a href="#about" class="button button-outline">
+              <span>ABOUT ME</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="hero-image-area">
+            <img
+              src="images/hero/shot-glass.png"
+              alt="暗いバーのカウンターに置かれたショットグラス"
+              class="hero-image"
+            />
+          </div>
+
+          <div class="scroll-indicator" aria-hidden="true">
+            <span class="scroll-text">SCROLL</span>
+            <span class="scroll-dot"></span>
+            <span class="scroll-line"></span>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
-
-  <!-- Main -->
-
-  <main></main>
 </html>
