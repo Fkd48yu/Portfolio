@@ -12,12 +12,7 @@
 }
 
 .skills-inner {
-  display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-  gap: clamp(4rem, 8vw, 8rem);
-
-  width: min(100% - 4rem, var(--inner-width));
-  margin-inline: auto;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
 }
 
 .skills-heading {
@@ -31,19 +26,14 @@
 
   color: var(--text-main);
   font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 3.5vw, 4rem);
+  font-size: clamp(2.75rem, 3.4vw, 4rem);
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.45;
   letter-spacing: 0.03em;
 }
 
 .skills-lead {
-  max-width: 30rem;
-  margin-top: var(--space-lg);
-
-  color: var(--text-sub);
-  font-size: 0.9rem;
-  line-height: 2;
+  max-width: 28rem;
 }
 
 .skills-list {
@@ -79,20 +69,16 @@
 }
 
 .skill-description {
-  max-width: 32rem;
-  margin: 0.75rem 0 0;
-
-  color: var(--text-sub);
-  font-size: 0.85rem;
-  line-height: 1.9;
+  margin-top: 0.6rem;
 }
 
 .skill-level {
-  margin: 0;
-  padding-top: 0.4rem;
-
-  color: var(--secondary);
-  font-size: 0.7rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  padding-top: 0.25rem;
+}
+.skills-title-line {
+  display: block;
+  white-space: nowrap;
+}
+.skills-heading .section-label {
+  margin-bottom: 2rem;
 }
