@@ -128,3 +128,27 @@
     padding-top: 0;
   }
 }
+@media (max-width: 900px) {
+  .skills-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    width: min(100% - 2rem, var(--inner-width));
+  }
+
+  .skills-heading {
+    position: static;
+  }
+
+  .skills-title-line {
+    white-space: normal;
+  }
+
+  .skill-item {
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+  }
+
+  .skill-level {
+    grid-column: 2;
+  }
+}
