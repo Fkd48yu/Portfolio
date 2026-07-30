@@ -71,3 +71,60 @@
     font-size: 2.75rem;
   }
 }
+@media (max-width: 900px) {
+  .about {
+    padding-block: 6rem;
+  }
+
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    width: min(100% - 2rem, var(--inner-width));
+  }
+
+  .about-content {
+    max-width: none;
+  }
+
+  .about-title {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+
+  .about-title-line {
+    white-space: normal;
+  }
+
+  .about-image-area {
+    aspect-ratio: 4 / 3;
+  }
+}
+@media (max-width: 900px) {
+  .skills {
+    padding-block: 6rem;
+  }
+
+  .skills-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    width: min(100% - 2rem, var(--inner-width));
+  }
+
+  .skills-heading {
+    position: static;
+  }
+
+  .skills-title {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+
+  .skill-item {
+    grid-template-columns: 2.5rem minmax(0, 1fr);
+  }
+
+  .skill-level {
+    grid-column: 2;
+    padding-top: 0;
+  }
+}
