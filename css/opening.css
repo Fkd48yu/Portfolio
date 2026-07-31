@@ -165,22 +165,39 @@
 ================================================== */
 
 .unlock {
+  display: inline-block;
+
   color: var(--text-sub);
 
   font-size: 0.8125rem;
   line-height: 1.6;
   letter-spacing: 0.35em;
+  text-decoration: none;
 
   opacity: 0.75;
+
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.unlock:hover {
+  color: var(--accent);
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.unlock:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 0.5rem;
 }
 .opening {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
+  display: grid;
+  place-items: center;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100svh;
+  padding: 2rem;
 
-  background: var(--bg-main);
+  background-color: var(--bg-main);
 }

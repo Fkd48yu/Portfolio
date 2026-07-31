@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FKD Portfolio | Yuta Fukuda</title>
+
+    <meta
+      name="description"
+      content="Yuta Fukudaのポートフォリオサイトです。HTML、CSS、Web制作を学習しています。"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="./css/works.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <body id="top"></body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <a href="#top" class="header-logo">
+          <img src="images/logo/keyhole.svg" alt="" class="header-logo-image" />
+
+          <span class="header-logo-text">FKD</span>
+        </a>
+
+        <nav class="global-nav" aria-label="メインナビゲーション">
+          <ul class="global-nav-list">
+            <li>
+              <a href="#about" class="global-nav-link">ABOUT</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="global-nav-link">SKILLS</a>
+            </li>
+
+            <li>
+              <a href="#works" class="global-nav-link">WORKS</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="global-nav-link">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main-content">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="hero-intro">HELLO,</p>
+
+            <h2 class="hero-title">
+              <span class="hero-title-small">I’m</span>
+
+              <span class="hero-title-name">
+                Yuta <strong>Fukuda.</strong>
+              </span>
+            </h2>
+
+            <p class="hero-role">Front-end Developer</p>
+
+            <div class="hero-description">
+              <p>
+                10年以上のバースタッフ経験で培った 「人に寄り添う力」を武器に、
+              </p>
+
+              <p>Webの世界で新しい価値を生み出したい。</p>
+
+              <p>
+                使いやすく、心地よいWebサイトを、
+                一つひとつ丁寧に制作しています。
+              </p>
+            </div>
+
+            <a href="#about" class="button button-outline">
+              <span>ABOUT ME</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="hero-image-area">
+            <img
+              src="images/hero/shot-glass.png"
+              alt="暗いバーのカウンターに置かれたショットグラス"
+              class="hero-image"
+            />
+          </div>
+
+          <div class="scroll-indicator" aria-hidden="true">
+            <span class="scroll-text">SCROLL</span>
+            <span class="scroll-dot"></span>
+            <span class="scroll-line"></span>
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section class="about" id="about">
+        <div class="about-inner">
+          <div class="about-content">
+            <p class="section-label">ABOUT</p>
+
+            <h2 class="about-title">
+              <span class="about-title-line">人と向き合う経験を、</span>
+              <span class="about-title-line">Webの世界で活かしたい。</span>
+            </h2>
+
+            <div class="about-description">
+              <p>10年以上、バー・飲食店で接客や店舗運営に携わってきました。</p>
+
+              <p>
+                多くのお客様と関わる中で、相手の要望を汲み取り、
+                丁寧なコミュニケーションと心地よい体験を提供することを
+                大切にしてきました。
+              </p>
+
+              <p>
+                その経験で培った「傾聴力」「課題解決力」「継続力」を活かし、
+                Webの世界で誰かの役に立つ制作をしていきたいと考えています。
+              </p>
+            </div>
+
+            <a href="#" class="button button-outline">
+              <span>MORE ABOUT ME</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="about-image-area">
+            <img
+              src="images/about/workspace.png"
+              alt="ノートパソコンでWeb制作に取り組む様子"
+              class="about-image"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Skills -->
+      <section class="skills" id="skills">
+        <div class="skills-inner">
+          <div class="skills-heading">
+            <p class="section-label">SKILLS</p>
+
+            <h2 class="skills-title">
+              <span class="skills-title-line">学び続ける姿勢を、</span>
+              <span class="skills-title-line">一つひとつ形に。</span>
+            </h2>
+
+            <p class="skills-lead">
+              基礎を大切にしながら、使いやすく見やすいWebサイト制作を目指して、
+              HTML・CSSを中心に学習を続けています。
+            </p>
+          </div>
+
+          <div class="skills-list">
+            <article class="skill-item">
+              <div class="skill-number">01</div>
+
+              <div class="skill-content">
+                <h3 class="skill-name">HTML</h3>
+                <p class="skill-description">
+                  意味を意識したマークアップと、保守しやすい構造を心がけています。
+                </p>
+              </div>
+
+              <p class="skill-level">Basic</p>
+            </article>
+
+            <article class="skill-item">
+              <div class="skill-number">02</div>
+
+              <div class="skill-content">
+                <h3 class="skill-name">CSS</h3>
+                <p class="skill-description">
+                  FlexboxやGrid、レスポンシブ対応を用いたレイアウト制作を学んでいます。
+                </p>
+              </div>
+
+              <p class="skill-level">Basic</p>
+            </article>
+
+            <article class="skill-item">
+              <div class="skill-number">03</div>
+
+              <div class="skill-content">
+                <h3 class="skill-name">Responsive Design</h3>
+                <p class="skill-description">
+                  PC・タブレット・スマートフォンで見やすい表示になるよう調整します。
+                </p>
+              </div>
+
+              <p class="skill-level">Learning</p>
+            </article>
+
+            <article class="skill-item">
+              <div class="skill-number">04</div>
+
+              <div class="skill-content">
+                <h3 class="skill-name">Git / GitHub</h3>
+                <p class="skill-description">
+                  GitHub
+                  Desktopを使ったコミット・プッシュ・公開作業を行っています。
+                </p>
+              </div>
+
+              <p class="skill-level">Learning</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Works -->
+      <section class="works" id="works">
+        <div class="works-inner">
+          <div class="works-heading">
+            <p class="section-label">WORKS</p>
+
+            <h2 class="works-title">
+              制作を通して、<br />
+              学びを形に。
+            </h2>
+
+            <p class="works-lead">
+              学習の中で制作したサイトや、これまで取り組んできた課題を掲載しています。
+            </p>
+          </div>
+
+          <div class="works-list">
+            <article class="work-card">
+              <a href="#" class="work-link">
+                <div class="work-image-area">
+                  <img
+                    src="images/works/portfolio.jpg"
+                    alt="ポートフォリオサイト"
+                    class="work-image"
+                  />
+                </div>
+
+                <div class="work-info">
+                  <div>
+                    <p class="work-category">PORTFOLIO</p>
+                    <h3 class="work-title">Personal Portfolio</h3>
+                  </div>
+
+                  <span class="work-arrow" aria-hidden="true">↗</span>
+                </div>
+
+                <p class="work-description">
+                  自身の経歴や価値観を表現した、ダークトーンのポートフォリオサイトです。
+                </p>
+              </a>
+            </article>
+
+            <article class="work-card">
+              <a href="#" class="work-link">
+                <div class="work-image-area">
+                  <img
+                    src="images/works/coffee.jpg"
+                    alt="コーヒーショップのWebサイト"
+                    class="work-image"
+                  />
+                </div>
+
+                <div class="work-info">
+                  <div>
+                    <p class="work-category">CODING PRACTICE</p>
+                    <h3 class="work-title">Coffee Shop Website</h3>
+                  </div>
+
+                  <span class="work-arrow" aria-hidden="true">↗</span>
+                </div>
+
+                <p class="work-description">
+                  HTMLとCSSを使用して制作した、レスポンシブ対応の店舗サイトです。
+                </p>
+              </a>
+            </article>
+
+            <article class="work-card work-card-coming">
+              <div class="work-coming-inner">
+                <p class="work-category">NEXT PROJECT</p>
+                <h3 class="work-title">Coming Soon</h3>
+                <p class="work-description">新しい制作物を追加予定です。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <div class="contact-inner">
+          <div class="contact-heading">
+            <p class="section-label">CONTACT</p>
+
+            <h2 class="contact-title">
+              <span class="contact-title-line">Let’s build something</span>
+              <span class="contact-title-line">meaningful together.</span>
+            </h2>
+          </div>
+
+          <div class="contact-content">
+            <p class="contact-message">
+              Web制作のご相談やご連絡は、メールからお願いいたします。
+              小さなことでも、一つひとつ丁寧に対応します。
+            </p>
+
+            <a href="mailto:あなたのメールアドレス" class="contact-mail">
+              <span class="contact-mail-label">EMAIL ME</span>
+
+              <span class="contact-mail-address"> 自分のメールアドレス </span>
+
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <div class="contact-links">
+              <a
+                href="https://github.com/Fkd48yu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#top" class="footer-logo">
+            <span class="footer-logo-mark" aria-hidden="true"></span>
+            <span>FKD</span>
+          </a>
+
+          <p class="footer-concept">Unlock My Next Chapter.</p>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copy">
+            <small>&copy; 2026 Yuta Fukuda</small>
+          </p>
+
+          <a href="#top" class="footer-back-top">
+            BACK TO TOP
+            <span aria-hidden="true">↑</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
