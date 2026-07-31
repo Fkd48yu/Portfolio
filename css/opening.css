@@ -25,9 +25,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 1rem;
 
   width: min(700px, 100%);
-
   text-align: center;
 }
 
