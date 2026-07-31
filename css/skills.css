@@ -10,7 +10,7 @@
   padding-block: 8rem;
 
   border-top: 1px solid var(--border);
-  background-color: var(--surface);
+  background: var(--bg-main);
 }
 
 .skills-inner {

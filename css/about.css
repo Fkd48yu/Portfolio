@@ -5,15 +5,9 @@
 .about {
   position: relative;
   padding-block: 6rem 8rem;
-  background-color: var(--section-surface);
+
   border-top: 1px solid var(--border);
-  background:
-    radial-gradient(
-      circle at 25% 45%,
-      rgba(56, 189, 248, 0.06),
-      transparent 38%
-    ),
-    var(--bg-main);
+  background: var(--bg-main);
 }
 
 .about-inner {
