@@ -182,7 +182,7 @@
 .scroll-indicator {
   position: absolute;
   bottom: 3rem;
-  left: max(2rem, calc((100vw - var(--inner-width)) / 2));
+  left: 1.5rem;
 
   z-index: 2;
 

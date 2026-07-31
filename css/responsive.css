@@ -265,10 +265,6 @@
     padding-right: 4rem;
   }
 
-  .scroll-indicator {
-    left: max(3rem, calc((100vw - 1440px) / 2 + 1rem));
-  }
-
   .contact-title {
     font-size: clamp(4rem, 4vw, 5rem);
     max-width: 12ch;
