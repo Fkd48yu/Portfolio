@@ -189,3 +189,36 @@
     padding: 2rem;
   }
 }
+@media (max-width: 900px) {
+  .contact {
+    padding-block: 6rem;
+  }
+
+  .contact-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    width: min(100% - 2rem, var(--inner-width));
+  }
+
+  .contact-title {
+    font-size: clamp(2.4rem, 10vw, 3.5rem);
+  }
+
+  .contact-title-line {
+    white-space: normal;
+  }
+
+  .contact-content {
+    padding-top: 0;
+  }
+
+  .contact-mail {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 1rem;
+  }
+
+  .contact-mail-address {
+    font-size: clamp(1.3rem, 6vw, 2rem);
+  }
+}

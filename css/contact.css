@@ -1,0 +1,143 @@
+/* ==================================================
+   Contact
+================================================== */
+
+.contact {
+  position: relative;
+  padding-block: 9rem;
+
+  border-top: 1px solid var(--border);
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(56, 189, 248, 0.08),
+      transparent 35%
+    ),
+    var(--surface);
+}
+
+.contact-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: start;
+  gap: clamp(4rem, 8vw, 8rem);
+
+  width: min(100% - 4rem, var(--inner-width));
+  margin-inline: auto;
+}
+
+.contact-title {
+  margin: 0;
+
+  color: var(--text-main);
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 4vw, 4.8rem);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+
+.contact-title-line {
+  display: block;
+  white-space: nowrap;
+}
+
+.contact-content {
+  padding-top: 4rem;
+}
+
+.contact-message {
+  max-width: 32rem;
+  margin: 0;
+
+  color: var(--text-sub);
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.contact-mail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 2rem;
+
+  margin-top: 3rem;
+  padding-block: 1.5rem;
+
+  color: inherit;
+  text-decoration: none;
+
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-mail-label {
+  grid-column: 1 / -1;
+
+  color: var(--accent);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+}
+
+.contact-mail-address {
+  overflow-wrap: anywhere;
+
+  color: var(--text-main);
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  line-height: 1.3;
+}
+
+.contact-arrow {
+  color: var(--text-main);
+  font-size: 1.4rem;
+
+  transition: transform 0.3s ease;
+}
+
+.contact-mail:hover .contact-arrow {
+  transform: translate(0.3rem, -0.3rem);
+}
+
+.contact-links {
+  display: flex;
+  gap: 2rem;
+
+  margin-top: 2rem;
+}
+
+.contact-links a {
+  position: relative;
+
+  color: var(--text-sub);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.contact-links a::after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  bottom: -0.4rem;
+  left: 0;
+
+  height: 1px;
+
+  background-color: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: var(--text-main);
+}
+
+.contact-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
