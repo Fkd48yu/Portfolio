@@ -152,3 +152,40 @@
     grid-column: 2;
   }
 }
+@media (max-width: 900px) {
+  .works {
+    padding-block: 6rem;
+  }
+
+  .works-inner {
+    width: min(100% - 2rem, var(--inner-width));
+  }
+
+  .works-heading {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    margin-bottom: 3rem;
+  }
+
+  .works-title {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+
+  .works-lead {
+    margin-left: 0;
+  }
+
+  .works-list {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .work-card:nth-child(3) {
+    grid-column: auto;
+  }
+
+  .work-coming-inner {
+    padding: 2rem;
+  }
+}
