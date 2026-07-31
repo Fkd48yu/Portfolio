@@ -8,14 +8,14 @@
 }
 
 .hero-inner {
-  position: static;
+  position: relative;
 
   display: grid;
-  grid-template-columns: minmax(600px, 1.1fr) minmax(360px, 0.9fr);
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.9fr);
   align-items: center;
 
   min-height: 100vh;
-  width: min(100% - 4rem, var(--inner-width));
+  width: min(calc(100% - 4rem), 1440px);
   margin-inline: auto;
 
   padding-top: 6rem;
@@ -26,8 +26,8 @@
   position: relative;
   z-index: 2;
 
-  padding-left: 3rem;
-  padding-right: 2rem;
+  padding-left: clamp(1rem, 3vw, 3rem);
+  padding-right: clamp(1.5rem, 3vw, 3rem);
 }
 
 .hero-intro {
@@ -50,6 +50,7 @@
 .hero-title-small,
 .hero-title-name {
   display: block;
+  font-size: clamp(3.5rem, 4.5vw, 5.5rem);
 }
 
 .hero-title-small {
@@ -141,7 +142,7 @@
   bottom: 0;
   z-index: 0;
 
-  width: 60vw;
+  width: clamp(760px, 58vw, 1150px);
 }
 
 .hero-image-area::before {

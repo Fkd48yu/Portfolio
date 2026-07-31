@@ -242,3 +242,17 @@
     align-items: flex-end;
   }
 }
+@media (min-width: 1920px) {
+  .hero-inner {
+    width: min(calc(100% - 6rem), 1440px);
+  }
+
+  .hero-image-area {
+    width: 1150px;
+  }
+
+  .hero-content {
+    padding-left: 2rem;
+    padding-right: 4rem;
+  }
+}
