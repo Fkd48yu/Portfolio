@@ -18,32 +18,34 @@
 
 .contact-inner {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
   align-items: start;
-  gap: clamp(4rem, 8vw, 8rem);
+  gap: clamp(3rem, 6vw, 7rem);
 
-  width: min(100% - 4rem, var(--inner-width));
+  width: min(calc(100% - 4rem), var(--inner-width));
   margin-inline: auto;
 }
 
 .contact-title {
+  max-width: 12ch;
   margin: 0;
 
   color: var(--text-main);
   font-family: var(--font-serif);
   font-size: clamp(2.8rem, 4vw, 4.8rem);
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.15;
   letter-spacing: 0.02em;
 }
 
 .contact-title-line {
   display: block;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .contact-content {
-  padding-top: 4rem;
+  min-width: 0;
+  padding-top: 3rem;
 }
 
 .contact-message {
@@ -59,8 +61,9 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: end;
-  gap: 2rem;
+  gap: clamp(1rem, 2vw, 2rem);
 
+  min-width: 0;
   margin-top: 3rem;
   padding-block: 1.5rem;
 
@@ -81,7 +84,7 @@
 
 .contact-mail-address {
   overflow-wrap: anywhere;
-
+  min-width: 0;
   color: var(--text-main);
   font-family: var(--font-serif);
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
@@ -140,4 +143,8 @@
 .contact-links a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+.contact-heading,
+.contact-content {
+  min-width: 0;
 }
