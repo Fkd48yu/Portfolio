@@ -242,17 +242,35 @@
     align-items: flex-end;
   }
 }
+/* ==================================================
+   Large Desktop (1920px〜)
+================================================== */
+
 @media (min-width: 1920px) {
-  .hero-inner {
+  .hero-inner,
+  .about-inner,
+  .skills-inner,
+  .works-inner,
+  .contact-inner,
+  .footer-inner {
     width: min(calc(100% - 6rem), 1440px);
   }
 
   .hero-image-area {
-    width: 1150px;
+    width: clamp(820px, 52vw, 1050px);
   }
 
   .hero-content {
-    padding-left: 2rem;
+    padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .scroll-indicator {
+    left: max(3rem, calc((100vw - 1440px) / 2 + 1rem));
+  }
+
+  .contact-title {
+    font-size: clamp(4rem, 4vw, 5rem);
+    max-width: 12ch;
   }
 }
