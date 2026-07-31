@@ -17,14 +17,16 @@
   min-height: 100vh;
   width: min(100% - 4rem, var(--inner-width));
   margin-inline: auto;
-  padding-top: 7rem;
+
+  padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
 
-  padding-left: 4rem;
+  padding-left: 2.5rem;
   padding-right: 2rem;
 }
 
@@ -37,12 +39,8 @@
 }
 
 .hero-title {
-  margin: 0;
-
-  color: var(--text-main);
-  font-family: var(--font-serif);
-  font-weight: 400;
-  line-height: 0.95;
+  font-size: clamp(3.2rem, 6vw, 5.4rem);
+  line-height: 1.15;
 }
 
 .hero-title-small,
@@ -89,13 +87,9 @@
 }
 
 .hero-description {
-  margin-top: 2rem;
-
-  color: var(--text-sub);
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 2;
 }
-
 .hero-description p {
   margin: 0;
 }
@@ -178,7 +172,7 @@
 
 .scroll-indicator {
   position: absolute;
-  bottom: 6rem;
+  bottom: 3rem;
   left: max(2rem, calc((100vw - var(--inner-width)) / 2));
 
   z-index: 2;
