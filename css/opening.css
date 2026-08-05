@@ -139,9 +139,9 @@
     drop-shadow(0 0 24px rgba(56, 189, 248, 0.08));
 
   transition:
-    filter var(--duration-normal) ease,
-    opacity var(--duration-normal) ease,
-    transform var(--duration-normal) ease;
+    transform 0.2s ease,
+    filter 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .keyhole:hover {
@@ -149,6 +149,17 @@
 
   filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.4))
     drop-shadow(0 0 20px rgba(56, 189, 248, 0.22));
+}
+
+/* ==================================================
+   Keyhole Click
+================================================== */
+
+.keyhole:active {
+  transform: scale(0.94) rotate(35deg);
+
+  filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.8))
+    drop-shadow(0 0 30px rgba(56, 189, 248, 0.4));
 }
 
 /* ==================================================
