@@ -70,6 +70,30 @@
   .section-title {
     font-size: 2.75rem;
   }
+  .header {
+    padding: 1.25rem 0;
+  }
+
+  .header-inner {
+    width: calc(100% - 2rem);
+  }
+
+  .header-logo {
+    gap: 0.65rem;
+  }
+
+  .header-logo-image {
+    width: 26px;
+  }
+
+  .header-logo-text {
+    font-size: 1rem;
+    letter-spacing: 0.28em;
+  }
+
+  .global-nav {
+    display: none;
+  }
 }
 @media (max-width: 900px) {
   .about {
